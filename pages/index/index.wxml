@@ -1,0 +1,18 @@
+<view class="container">
+	<view class="top">
+		<text>{{date.gregoriandate}}</text>
+		<text>{{date.lubarmonth}}</text>
+		<text>{{date.lunarday}}</text>
+		<text>{{date.lunar_festival}}</text>
+		<text>{{date.festival}}</text>
+		<text>{{date.fitness}}</text>
+		<text>{{date.taboo}}</text>
+		<text>{{date.tiangandizhiyear}}</text>
+		<text>{{date.tiangandizhimonth}}</text>
+		<text>{{date.tiangandizhiday}}</text>
+		<text>{{date.jieqi}}</text>
+	</view>
+	<view class="bottom">
+		书籍展示
+	</view>
+</view>

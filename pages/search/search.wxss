@@ -1,0 +1,12 @@
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+input {
+	background-color: black;
+}
+
+button {
+	background-color: blue;
+}
