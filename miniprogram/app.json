@@ -1,19 +1,19 @@
 {
-	"pages":[
+  "pages": [
 		"pages/index/index",
-		"pages/search/search",
 		"pages/ranking/ranking",
 		"pages/category/category",
 		"pages/me/me",
 		"pages/book/book",
 		"pages/logs/logs"
-	],
-	"window":{
-		"backgroundTextStyle":"light",
-		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "Weixin",
-		"navigationBarTextStyle":"black"
-	},
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
 	"tabBar": {
 		"list": [
 			{
@@ -21,12 +21,6 @@
 				"text": "首页",
 				"iconPath": "icons/_home.png",
 				"selectedIconPath": "icons/home.png"
-			},
-			{
-				"pagePath": "pages/search/search",
-				"text": "搜索",
-				"iconPath": "icons/_search.png",
-				"selectedIconPath": "icons/search.png"
 			},
 			{
 				"pagePath": "pages/ranking/ranking",
@@ -49,6 +43,6 @@
 		],
 		"selectedColor": "#ffa115"
 	},
-	"style": "v2",
-	"sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
 }
