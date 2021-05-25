@@ -1,0 +1,4 @@
+<!--component/category/category.wxml-->
+<view class="block">
+  <view><text>相关分类：{{category}}</text></view>
+</view>

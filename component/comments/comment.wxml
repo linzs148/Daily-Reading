@@ -1,0 +1,4 @@
+<!--component/comments/comment.wxml-->
+<view class="block">
+  <text class="title">评论</text>
+</view>

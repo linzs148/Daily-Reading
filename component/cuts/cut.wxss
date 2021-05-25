@@ -1,0 +1,16 @@
+/* component/cuts/cut.wxss */
+.cut-group {
+  width: 100%;
+  height: 200rpx;
+  overflow: hidden;
+  padding: 20rpx;
+  background: rgb(240, 240, 240);
+  white-space: nowrap;
+  }
+.singleCut{
+    height: 200rpx;
+    width: 200rpx;
+    margin-right: 23rpx;
+    display: inline-block; 
+    background: rgb(190, 165, 165);
+}

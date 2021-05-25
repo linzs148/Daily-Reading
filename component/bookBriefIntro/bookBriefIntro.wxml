@@ -1,0 +1,20 @@
+<!--component/bookBriefIntro/bookBriefIntro.wxml-->
+<view class="block">
+  <view class="block1">
+    <view>
+      <image src="{{src}}" class="img"></image>
+      <van-rate
+      value="{{ rate/2 }}"
+      size="{{ 15 }}"
+      allow-half
+      void-color="#eee"
+      void-icon="star"
+      readonly
+        />
+    </view>
+    <view class="block2">
+      <text class="name">{{name}}</text>
+      <text class="intro">{{briefIntro}}</text>
+    </view>
+  </view>
+</view>

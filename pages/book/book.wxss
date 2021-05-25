@@ -1,1 +1,4 @@
 /* pages/book/book.wxss */
+.category{
+  margin-top: 20px;
+}

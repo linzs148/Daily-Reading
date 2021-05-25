@@ -1,3 +1,9 @@
 {
-	"usingComponents": {}
+	"usingComponents": {
+		"bookBriefIntro":"/component/bookBriefIntro/bookBriefIntro",
+		"category":"/component/category/category",
+		"intro":"/component/intro/intro",
+		"cut":"/component/cuts/cut",
+		"comment":"/component/comments/comment"
+	}
 }

@@ -1,54 +1,58 @@
 {
-	"pages":[
-		"pages/index/index",
-		"pages/search/search",
-		"pages/ranking/ranking",
-		"pages/category/category",
-		"pages/me/me",
-		"pages/book/book",
-		"pages/logs/logs"
-	],
-	"window":{
-		"backgroundTextStyle":"light",
-		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "Weixin",
-		"navigationBarTextStyle":"black"
-	},
-	"tabBar": {
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "首页",
-				"iconPath": "icons/_home.png",
-				"selectedIconPath": "icons/home.png"
-			},
-			{
-				"pagePath": "pages/search/search",
-				"text": "搜索",
-				"iconPath": "icons/_search.png",
-				"selectedIconPath": "icons/search.png"
-			},
-			{
-				"pagePath": "pages/ranking/ranking",
-				"text": "排行",
-				"iconPath": "icons/_ranking.png",
-				"selectedIconPath": "icons/ranking.png"
-			},
-			{
-				"pagePath": "pages/category/category",
-				"text": "分类",
-				"iconPath": "icons/_category.png",
-				"selectedIconPath": "icons/category.png"
-			},
-			{
-				"pagePath": "pages/me/me",
-				"text": "我的",
-				"iconPath": "icons/_me.png",
-				"selectedIconPath": "icons/me.png"
-			}
-		],
-		"selectedColor": "#ffa115"
-	},
-	"style": "v2",
-	"sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/ranking/ranking",
+    "pages/category/category",
+    "pages/me/me",
+    "pages/book/book",
+    "pages/logs/logs",
+    "component/bookBriefIntro/bookBriefIntro",
+    "component/category/category",
+    "component/intro/intro",
+    "component/cuts/cut",
+    "component/comments/comment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/_home.png",
+        "selectedIconPath": "icons/home.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "icons/_search.png",
+        "selectedIconPath": "icons/search.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排行",
+        "iconPath": "icons/_ranking.png",
+        "selectedIconPath": "icons/ranking.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "icons/_category.png",
+        "selectedIconPath": "icons/category.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "icons/_me.png",
+        "selectedIconPath": "icons/me.png"
+      }
+    ],
+    "selectedColor": "#ffa115"
+  },
+  "sitemapLocation": "sitemap.json"
 }

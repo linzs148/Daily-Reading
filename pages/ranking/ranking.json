@@ -1,3 +1,5 @@
 {
-	"usingComponents": {}
+	"usingComponents": {
+		"bookBriefIntro":"/component/bookBriefIntro/bookBriefIntro"
+	}
 }

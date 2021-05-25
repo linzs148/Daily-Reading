@@ -1,0 +1,18 @@
+<!--component/cuts/cut.wxml-->
+<view class="block">
+  <view>
+    <text class="title">摘录</text>
+  </view>
+  <scroll-view class="cut-group" scroll-x="true">
+    <view class="item_list" >
+        <text class="singleCut">123456</text>
+        <text class="singleCut">789456</text>
+        <text class="singleCut">123456</text>
+        <text class="singleCut">789456</text>
+        <text class="singleCut">123456</text>
+        <text class="singleCut">789456</text>
+        <text class="singleCut">123456</text>
+        <text class="singleCut">789456</text>
+    </view>
+  </scroll-view>
+</view>
