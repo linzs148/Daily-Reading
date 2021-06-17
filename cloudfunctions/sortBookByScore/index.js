@@ -21,7 +21,7 @@ exports.main = async (event, context) => {
       bid:true,
       ISBN:true
     })
-    .limit(10)//到时记得删除
+    //.limit(10)//到时记得删除
     .orderBy('score', 'desc')
     .get()                   //获取根据查询条件筛选后的集合数据
     .then(res => {

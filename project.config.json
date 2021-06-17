@@ -1,6 +1,5 @@
 {
-  "miniprogramRoot":"",
-  "cloudfunctionRoot":"cloudfunctions/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "description": "项目配置文件",
   "packOptions": {
     "ignore": []
@@ -53,6 +52,7 @@
     "servePath": ""
   },
   "isGameTourist": false,
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []
@@ -73,6 +73,4 @@
       "list": []
     }
   }
-  
-  
 }

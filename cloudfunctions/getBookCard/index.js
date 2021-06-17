@@ -29,16 +29,25 @@ exports.main = async (event, context) => {
     .then(res => {
       console.log(res.data[0])
       console.log('[数据库] [查询记录] 成功: ', res)
+      list = res.data[0].tags.split(" ")
+      a = []
+      num = Math.min(list.length,5)
+      for(i=0;i<num;i++){
+        a.push(list[i])
+      }
+      author2=res.data[0].author.replace(/\s*/g,"")
+      abstractTrim=res.data[0].abstract.trim()
+      introTrim=res.data[0].intro.trim()
       return {
         data:{
           bookName:res.data[0].bname,
-          bookAuthor:res.data[0].author,
-          bookCategory:res.data[0].tags.replace(" ",","),
+          bookAuthor:author2,
+          bookCategory:a,
           bookAvgRate:res.data[0].score.toString(),
           bookImgSrc:res.data[0].pic_link,
-          bookIntro:res.data[0].intro,
+          bookIntro:introTrim,
           bookCuts:[
-            res.data[0].abstract
+            abstractTrim
           ]//摘录列表
         }
       }

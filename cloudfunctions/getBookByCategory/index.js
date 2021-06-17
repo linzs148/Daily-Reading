@@ -6,7 +6,7 @@ cloud.init()
 // 云函数入口函数
 exports.main = async (event, context) => {
   const db = cloud.database()
-  cate=event.categoryNum
+  cate=event.category
   const _ = db.command     //获取数据库查询及更新指令
   return await db.collection("books")  //获取集合book的引用
     .where({              //查询的条件指令where
