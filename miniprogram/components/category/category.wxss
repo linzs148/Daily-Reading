@@ -1,0 +1,6 @@
+/* component/category/category.wxss */
+.block{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}

@@ -1,3 +1,14 @@
 {
-	"usingComponents": {}
+	"usingComponents": {
+		"bookBriefIntro":"../../components/bookBriefIntro/bookBriefIntro",
+		"category":"../../components/category/category",
+		"intro":"../../components/intro/intro",
+		"cut":"../../components/cuts/cut",
+		"comment":"../../components/comments/comment",
+		"van-sticky": "@vant/weapp/sticky/index",
+		"van-button":"@vant/weapp/button/index",
+		"releaseComment":"../../components/releaseComment/releaseComment",
+		"collection":"../../components/score&collection/index",
+		"van-toast": "@vant/weapp/toast/index"
+	}
 }

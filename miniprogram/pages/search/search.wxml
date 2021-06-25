@@ -1,0 +1,12 @@
+<block wx:if="{{state}}">
+	<block wx:for="{{bookidlist}}" wx:for-item="line">
+		<view class="line">
+			<block wx:for="{{line}}" wx:for-item="bookid">
+				<book-card-small bookid="{{bookid}}"></book-card-small>
+			</block>
+		</view>
+	</block>
+</block>
+<block wx:else>
+	<van-empty description="呜呜呜没有找到与输入关键字相关的书籍" />
+</block>

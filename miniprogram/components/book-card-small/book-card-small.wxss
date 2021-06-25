@@ -1,0 +1,23 @@
+book-card-small {
+	width: 250rpx;
+	padding: 25rpx;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 200rpx;
+}
+
+.title {
+	height: 50rpx;
+	font-size: 25rpx;
+	font-weight: normal;
+	text-align: center;
+}
+
+.score {
+	font-size: 25rpx;
+	font-weight: normal;
+	color: gray;
+}

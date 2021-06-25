@@ -1,17 +1,21 @@
 {
   "pages": [
 		"pages/index/index",
-		"pages/ranking/ranking",
 		"pages/category/category",
-		"pages/me/me",
+		"pages/ranking/ranking",
+		"pages/search/search",
 		"pages/book/book",
-		"pages/logs/logs"
+		"pages/me/me",
+		"pages/me/collection/collection",
+		"pages/me/developer/developer",
+		"pages/me/help/help",
+		"pages/me/history/history"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
+	"backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "一日易书",
     "navigationBarTextStyle": "black"
   },
 	"tabBar": {
@@ -44,5 +48,8 @@
 		"selectedColor": "#ffa115"
 	},
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "usingComponents": {
+	"book-card": "components/book-card/book-card",
+	"book-card-small": "components/book-card-small/book-card-small"
+  }
 }

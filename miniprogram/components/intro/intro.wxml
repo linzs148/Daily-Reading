@@ -1,0 +1,5 @@
+<!--component/intro/intro.wxml-->
+<view class="block">
+  <text class="title">简介</text>
+  <text class="text">{{bookIntro}}</text>
+</view>

@@ -1,0 +1,31 @@
+/* component/comments/comment.wxss */
+.title{
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+.comment{
+  margin-left: 10px;
+  background: rgb(240, 240, 240);
+  border-radius: 15px;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  border-radius: 37.5rpx;
+	box-shadow: 5rpx 5rpx 5rpx 5rpx gray;
+}
+.text{
+margin-left: 10px;
+margin-top: 10px;
+border-radius: 10rpx;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx gray;
+  background-color: rgb(239, 240, 248);
+}
+.uName{
+  font-weight: bolder;
+  font-size: larger;
+}
+.com{
+  margin-left: 50px;
+}

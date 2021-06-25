@@ -1,0 +1,11 @@
+<!--pages/me/developer/developer.wxml-->
+<view class = "container">
+  <view class = "title">
+    <text style="font-size:60rpx;">开发者信息</text>
+  </view>
+  <view class = "content">
+    <text class = 'para'>小组成员：林正顺，康森，鲁圣哲，欧阳志昌，李晓康</text>
+    <text class = 'para'>前端制作：林正顺，康森，鲁圣哲</text>
+    <text class = 'para'>后端制作：欧阳志昌，李晓康</text>
+  </view>
+</view>

@@ -1,66 +1,25 @@
-// pages/category/category.js
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
 	data: {
-
+		isShow: false,
+		categorylist: ["科幻", "推理", "言情", "武侠", "计算机", "经济学", "儿童文学", "社会", "艺术", "政治", "职场", "教育", "科技", "悬疑", "心理"],
+		bookidlist: []
 	},
-
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad: function (options) {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload: function () {
-
-	},
-
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh: function () {
-
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom: function () {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage: function () {
-
+	onLoad() {
+		const bookISBNlist = new Array(15)
+		for(let i = 0; i < 15; i++) {
+			wx.cloud.callFunction({
+				name: 'getBookByCategory',
+				data: {
+					category: i
+				},
+				success: res => {
+					bookISBNlist[i] = res.result.data.list_ISBN
+					this.setData({
+						bookidlist: bookISBNlist,
+						isShow: true
+					})
+				}
+			})
+		}
 	}
 })

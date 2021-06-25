@@ -1,0 +1,19 @@
+/* miniprogram/pages/me/collection/collection.wxss */
+.collection_title{
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.recordBar{
+  width:100%;
+  margin-top: 20rpx;
+  border-top: 1rpx solid #727070;
+}
+.record{
+  margin:20rpx;
+  padding-left:30rpx;
+  line-height: 50rpx;
+  height:80rpx;
+  width:100%;
+	border-bottom: 1rpx solid #c7c4c4;
+}

@@ -1,0 +1,16 @@
+<!--component/score&collection/index.wxml-->
+<view class="block2">
+  <view class="block1">
+    <text>您的评分：</text>
+    <van-rate
+    value="{{ value/2 }}"
+    size="{{ 25 }}"
+    allow-half
+    color="#ee0a24"
+    void-color="#eee"
+    void-icon="star"
+    bind:change="onChange1"
+    />
+  </view >
+  <van-button type="primary" icon="{{buttonIcon}}" round class="toLeft" color="{{buttonColor}}" bindtap="onTap">{{buttonMsg}}</van-button>
+</view>

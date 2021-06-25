@@ -1,0 +1,12 @@
+<!--component/comments/comment.wxml-->
+<view class="block">
+  <text class="title">评论</text>
+  <view class="comment">
+  <view wx:for="{{bookComments}}" wx:key="id" >
+    <view class="text">
+    <text class="uName">{{item.usrName}}:\n</text>
+    <text class="com">{{item.comment}}\n</text>
+    </view>
+  </view>
+  </view>
+</view>

@@ -1,17 +1,51 @@
 // index.js
 // 获取应用实例
-const app = getApp()
+var app = getApp()
 
 Page({
 	data: {
-		motto: 'Hello World',
+		skinStyle:'',
+		check:false,
 		userInfo: {},
 		hasUserInfo: false,
 		canIUse: wx.canIUse('button.open-type.getUserInfo'),
 		canIUseGetUserProfile: false,
 		canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
 	},
-	// 事件处理函数
+	jumpToHelp:function(){
+		wx.navigateTo({
+      url: '../../pages/me/help/help',
+    })
+	},
+	jumpToDeveloper:function(){
+		wx.navigateTo({
+			url: '../../pages/me/developer/developer',
+		})
+	},
+  nightMode:function(e){
+		var that =this
+		 //如果开启
+		if(e.detail.value == true){ 
+			app.globalData.skin="dark" 
+		} 
+		else {
+			app.globalData.skin="" 
+		}
+		//保存信息
+		that.setData({ skinStyle: app.globalData.skin })
+		//保存到本地
+		wx.setStorage({ key: "skin", data: app.globalData.skin }) 
+	},
+  jumpToHistory:function(){
+    wx.navigateTo({
+      url: '../../pages/me/history/history',
+    })
+  },
+  jumpToCollection:function(){
+    wx.navigateTo({
+      url: '../../pages/me/collection/collection',
+    })
+  },
 	bindViewTap() {
 		wx.navigateTo({
 			url: '../logs/logs'

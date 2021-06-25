@@ -1,12 +1,59 @@
-.container {
-	height: 100vh;
+/*
+.search {
+	width: 100%;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    z-index: 9999;
+}
+*/
+
+.today {
+	height: 300rpx;
+	margin: 30rpx;
+	padding: 30rpx;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background-color: white;
+	border-radius: 37.5rpx;
+	box-shadow: 5rpx 5rpx 5rpx 5rpx gray;
+	text-align: center;
 }
 
-.top {
+.today {
+	font-size: large;
+	color: skyblue;
+	font-weight: bold;
+}
+
+.fitness {
+	color: rgb(140, 209, 36);
+}
+
+.taboo {
+	color: rgb(240, 121, 141);
+}
+
+.book {
+	padding: 30rpx;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	white-space: pre-wrap;
+}
+
+.card {
+	margin-top: 50rpx;
+	padding: 37.5rpx;
+	background-color: white;
+	border-radius: 37.5rpx;
+	font-size: small;
+	line-height: 1.5;
+	box-shadow: 5rpx 5rpx 5rpx 5rpx gray;
+}
+
+.title {
+	font-size: large;
+	font-weight: bold;
 }

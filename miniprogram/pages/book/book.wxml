@@ -1,2 +1,29 @@
-<!--pages/book/book.wxml-->
-<text>pages/book/book.wxml</text>
+<van-toast id="van-toast" />
+<view class="margin2">
+  <van-sticky>
+    <van-button round icon="arrow-up" type="info" class="toTopButton" bindtap="goTop"></van-button>
+  </van-sticky>
+  <bookBriefIntro  
+    bookISBN="{{bookISBN}}"
+    imgSrc="{{bookImgSrc}}"
+    bookName="{{bookName}}"
+    avgRate="{{bookAvgRate}}"
+    usrRate="{{usrRate}}"
+    usrCollected="{{usrCollected}}"
+    ></bookBriefIntro>
+  <view class="category">
+    <category bookCategory="{{bookCategory}}"></category>
+  </view>
+  <view class="category">
+    <intro bookIntro="{{bookIntro}}"></intro>
+  </view>
+  <view class="category">
+    <cut bookCuts="{{bookCuts}}"></cut>
+  </view>
+  <view class="awayBottom">
+    <comment bookComments="{{bookComments}}"></comment>
+  </view>
+  <view class="commentBar">
+    <releaseComment bookISBN="{{bookISBN}}"></releaseComment>
+  </view>
+</view>

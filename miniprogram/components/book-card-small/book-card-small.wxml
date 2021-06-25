@@ -1,0 +1,10 @@
+<navigator url="/pages/book/book?bookISBN={{bookid}}" bindtap="addHistory">
+	<view class="card">
+		<van-image width="200rpx" height="300rpx" src="{{bookinfo.img}}" />
+		<view class="title">{{bookinfo.title}}</view>
+		<view class="rate">
+			<van-rate readonly allow-half size="25rpx" value="{{bookinfo.score / 2}}" />
+			<text class="score">{{bookinfo.score}}</text>
+		</view>
+	</view>
+</navigator>

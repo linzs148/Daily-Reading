@@ -1,0 +1,22 @@
+<!--component/releaseComment/releaseComment.wxml-->
+<van-toast id="van-toast" />
+<view>
+  <van-cell-group>
+  <van-field
+    value="{{ newComment }}"
+    clickable
+    label="评论"
+    placeholder="你的评论"
+    size="large"
+    bind:click-icon="onClickIcon"
+    use-button-slot
+    cursor-spacing="10"
+    model:value="{{ newComment }}" 
+     bind:change="textchange"
+  >
+  <van-button slot="button" size="small" type="primary" bindtap="release" open-type="getUserInfo">
+      发表
+    </van-button>
+  </van-field>
+</van-cell-group>
+</view>

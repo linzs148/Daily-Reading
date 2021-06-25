@@ -1,0 +1,4 @@
+/* component/score&collection/index.wxss */
+.toLeft{
+  margin-left: 200rpx;
+}

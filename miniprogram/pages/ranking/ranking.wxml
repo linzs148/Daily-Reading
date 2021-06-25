@@ -1,2 +1,6 @@
-<!--pages/ranking/ranking.wxml-->
-<text>pages/ranking/ranking.wxml</text>
+<block wx:if="{{isShow}}" wx:for="{{bookidlist}}" wx:key="index">
+	<book-card bookid="{{item}}" class="card"></book-card>
+</block>
+<view class="loading">
+	<van-loading type="spinner" color="#1989fa" size="50rpx" text-size="25rpx" vertical>加载中...</van-loading>
+</view>

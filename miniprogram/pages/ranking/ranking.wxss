@@ -1,1 +1,7 @@
-/* pages/ranking/ranking.wxss */
+.card {
+	padding: 30rpx;
+}
+
+.loading {
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+/* component/cuts/cut.wxss */
+.cut-group {
+  width: 95%;
+  padding: 20rpx;
+  border-radius: 15px;
+  border-radius: 37.5rpx;
+	box-shadow: 5rpx 5rpx 5rpx 5rpx gray;
+  }
+  .item_list{
+    height: 195rpx;
+    margin-right: 50rpx;
+    display: inline-block; 
+    background: rgb(240, 240, 240);
+    border-radius: 15px;
+    word-break:break-all;
+}
+
+.title{
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+.ftext{
+  overflow:scroll; 
+text-overflow: scroll; 
+display: flex;
+flex-direction: column;
+font-size: 15px;
+}

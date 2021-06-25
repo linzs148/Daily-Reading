@@ -1,0 +1,11 @@
+<!--component/cuts/cut.wxml-->
+<view class="block">
+  <view>
+    <text class="title">摘录</text>
+  </view>
+  <scroll-view class="cut-group" scroll-x="true">
+    <view class="item_list" wx:for="{{bookCuts}}" wx:key="index" >
+        <text class="ftext">{{item}}</text>
+    </view>
+  </scroll-view>
+</view>

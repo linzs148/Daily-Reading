@@ -1,2 +1,10 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<block wx:if="{{isShow}}" wx:for="{{categorylist}}" wx:for-item="category" wx:key="index">
+	<view class="line">
+		<view class="category">{{category}}</view>
+		<scroll-view scroll-x="true" class="scroll">
+			<block wx:for="{{bookidlist[index]}}" wx:for-item="bookid">
+				<book-card-small bookid="{{bookid}}" class="item"></book-card-small>
+			</block>
+		</scroll-view>
+	</view>
+</block>

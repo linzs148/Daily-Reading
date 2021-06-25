@@ -1,0 +1,19 @@
+<!--miniprogram/pages/me/history/history.wxml-->
+<view class = "container">
+  <view class = "history_title">
+    <text style="font-size:60rpx;">历史足迹</text>
+  </view>
+  <view class = "recordBar">
+    <view wx:for="{{records}}" wx:key = "id" wx:for-item = "record" wx:for-index = "i">
+      <block>
+        <view  class ="record" bindtap = "searchBySSID" data-index = "{{record}}">
+          {{"《"+record.bookName+"》"}}
+          <text class="title" >\n浏览时间：{{record.read_time}}</text>
+        </view>
+        
+      </block> 
+    </view>
+    <!-- <view  class ="record" bindtap = "searchBySSID" data-index = "{{records}}" wx:for="{{records}}" wx:key = "id" wx:for-item = "record" wx:for-index = "i">      
+    </view> -->
+  </view>
+</view>

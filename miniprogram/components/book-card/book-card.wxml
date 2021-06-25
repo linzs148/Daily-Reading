@@ -1,0 +1,18 @@
+<navigator url="/pages/book/book?bookISBN={{bookid}}" bindtap="addHistory">
+	<view class="card">
+		<van-image width="225rpx" height="337.5rpx" src="{{bookinfo.bookImgSrc}}" />
+		<view class="book">
+			<view class="info">
+				<div class="title">{{bookinfo.bookName}}</div>
+				<text class="author">{{bookinfo.bookAuthor}}</text>
+				<view class="category">
+					<van-tag type="primary" round wx:for="{{bookinfo.bookCategory}}" wx:key="index">{{item}}</van-tag>
+				</view>
+			</view>
+			<view class="douban">
+				<view>豆瓣评分 <text class="score">{{bookinfo.bookAvgRate > 0 ? bookinfo.bookAvgRate : "暂无分数"}}</text></view>
+				<van-rate readonly allow-half value="{{bookinfo.bookAvgRate / 2}}" />
+			</view>
+		</view>
+	</view>
+</navigator>

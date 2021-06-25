@@ -13,7 +13,10 @@ App({
         traceUser: true,
       })
 	}
-	
-    this.globalData = {}
+  },
+  globalData: {
+    hasLogin: false,
+    openid: "",
+    nickName:"微积分不过平均分不改名"
   }
 })

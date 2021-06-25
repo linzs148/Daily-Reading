@@ -1,1 +1,22 @@
-/* pages/category/category.wxss */
+.line {
+	margin: 30rpx;
+	padding: 20rpx;
+	background-color: white;
+	border-radius: 37.5rpx;
+	box-shadow: 5rpx 5rpx 5rpx 5rpx gray;
+}
+
+.category {
+	font-size: large;
+	font-weight: bold;
+}
+
+.scroll {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.item {
+	display: inline-block;
+	padding: 10rpx;
+}

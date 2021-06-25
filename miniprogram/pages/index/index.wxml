@@ -1,18 +1,31 @@
-<view class="container">
-	<view class="top">
-		<text>{{date.gregoriandate}}</text>
-		<text>{{date.lubarmonth}}</text>
-		<text>{{date.lunarday}}</text>
-		<text>{{date.lunar_festival}}</text>
-		<text>{{date.festival}}</text>
-		<text>{{date.fitness}}</text>
-		<text>{{date.taboo}}</text>
-		<text>{{date.tiangandizhiyear}}</text>
-		<text>{{date.tiangandizhimonth}}</text>
-		<text>{{date.tiangandizhiday}}</text>
-		<text>{{date.jieqi}}</text>
-	</view>
-	<view class="bottom">
-		书籍展示
+<!--吸顶搜索框-->
+<van-sticky>
+	<van-search
+		value="{{value}}"
+		shape="round"
+		background="#f6f6f6"
+		placeholder="输入关键词搜索书籍"
+		bind:change="onChange"
+  		bind:search="onSearch"
+	/>
+</van-sticky>
+<view class="today">
+	<text class="gregoriandate">{{today.gregoriandate}}</text>
+	<text class="lubardate">农历 {{today.lubarmonth}}{{today.lunarday}} {{today.jieqi}}</text>
+	<view class="fitness"><van-tag size="large" color="green" round>宜</van-tag>{{today.fitness}}</view>
+	<view class="taboo"><van-tag size="large" color="red" round>忌</van-tag>{{today.taboo}}</view>
+</view>
+
+<view class="book">
+	<book-card wx:if="{{isShow}}" bookid="{{bookid}}"></book-card>
+	<view class="card"><text class="title">简介\n</text>{{description.introduction}}</view>
+	<view class="card"><text class="title">摘录\n</text>{{description.sentence}}</view>
+	<view class="card">
+		<text class="title">评论\n</text>
+		<block wx:for="{{description.comment}}" wx:for-item="comment" wx:for-key="index">
+			<text style="color:blue">@{{comment.authorComment}}: </text>
+			<text>{{comment.comment}}</text>
+			<van-divider  customStyle="border-color: #1989fa;" />
+		</block>
 	</view>
 </view>

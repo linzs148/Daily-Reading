@@ -1,0 +1,12 @@
+<!--miniprogram/pages/me/help/help.wxml-->
+<view class = "container">
+  <view class = "title">
+    <text style="font-size:60rpx;">帮助</text>
+  </view>
+  <view class = "help-content">
+    <text class = 'para'>你可以在“首页”页面来寻找一些可能令你感兴趣的书籍。</text>
+    <text class = 'para'>你可以在“排行”页面查看小程序中书籍的排行情况。</text>
+    <text class = 'para'>你可以在“分类”页面寻找你感兴趣的书籍类型。</text>
+    <text class = 'para'>你可以在“我的”页面查看自己的历史记录，收藏书籍以及一些小程序的更多细节。</text>
+  </view>
+</view>

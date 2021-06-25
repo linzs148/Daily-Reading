@@ -1,0 +1,24 @@
+/* miniprogram/pages/me/history/history.wxss */
+.history_title{
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.recordBar{
+  width:100%;
+  margin-top: 20rpx;
+  border-top: 1rpx solid #727070;
+}
+.title{
+  color:gray;font-size: 8pt !important;
+  position: absolute;
+	right: 10px;
+}
+.record{
+  margin:20rpx;
+  padding-left:30rpx;
+  line-height: 50rpx;
+  height:120rpx;
+  width:100%;
+	border-bottom: 1rpx solid #c7c4c4;
+}
